@@ -44,3 +44,41 @@ function prime_number_check(n){
     }
 }
 prime_number_check(n)
+/** let defaultNumber;
+let validNumber = false;
+while (!validNumber) { //khi số không hợp lệ
+    defaultNumber = Number(prompt("Vui lòng nhập vào 1 số nguyên"));
+    validNumber = Number.isInteger(defaultNumber); //is number js
+    if (!validNumber) {//khi số không hợp lệ
+        alert("Đây không phải là số nguyên");
+    }
+}
+
+kiemTraSoNguyenTo(defaultNumber);
+
+function kiemTraSoNguyenTo(number) {
+    let result = true;
+
+    //kết quả biến result
+    if (number < 2) {
+        result = false;
+    } else if (number === 2) {
+        result = true;
+    } else {
+        for (let i = 2; i < number; i++) {
+            console.log(i);
+            if (number % i === 0) {
+                result = false;
+                break;
+            }
+        }
+    }
+
+    // log ra kết quả theo biến result 
+    if (result) {
+        console.log("Đây là số nguyên tố");
+    } else {
+        console.log("Đây không phải là số nguyên tố");
+    }
+}
+ */
